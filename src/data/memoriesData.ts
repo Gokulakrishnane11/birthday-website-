@@ -9,12 +9,15 @@ export interface MemoryPhotoItem {
   id: string;
   title: string;
   caption: string;
-  
   date: string;
   image: string;
   category?: string;
   aspectRatio?: 'landscape' | 'portrait' | 'square';
   note?: string;
+  handwrittenNote?: string;
+  sticker?: string;
+  tapeColor?: 'rose' | 'gold' | 'lavender' | 'mint';
+  featured?: boolean;
 }
 
 export const memoriesData: MemoryPhotoItem[] = [
@@ -27,6 +30,10 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Birthday Keepsake",
     aspectRatio: "landscape",
     note: "Add your favorite portrait of Deepa here",
+    handwrittenNote: "The Birthday Girl • 20 Years Young 👑",
+    sticker: "★ 20TH MILESTONE ★",
+    tapeColor: "gold",
+    featured: true,
   },
   {
     id: "mem-2",
@@ -37,6 +44,9 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Little Details",
     aspectRatio: "portrait",
     note: "Replace photo2.svg with a photo celebrating her curls",
+    handwrittenNote: "Effortlessly bouncy & iconic 🌸",
+    sticker: "Signature Curls",
+    tapeColor: "rose",
   },
   {
     id: "mem-3",
@@ -47,6 +57,9 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Connection",
     aspectRatio: "square",
     note: "Replace photo3.svg with a memorable chat screenshot or memory",
+    handwrittenNote: "When a 5-min update turns into hours ☕",
+    sticker: "Late Night Talks",
+    tapeColor: "lavender",
   },
   {
     id: "mem-4",
@@ -57,6 +70,9 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Personality",
     aspectRatio: "landscape",
     note: "Replace photo4.svg with a candid, happy picture",
+    handwrittenNote: "Pure chaos & sunshine energy 🐼✨",
+    sticker: "Gundoos 🐼",
+    tapeColor: "mint",
   },
   {
     id: "mem-5",
@@ -67,6 +83,9 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Playful Banter",
     aspectRatio: "portrait",
     note: "Replace photo5.svg with a funny candid memory",
+    handwrittenNote: "Lifetime Gym Aunty roast material 🕵️‍♀️",
+    sticker: "Inside Joke 😂",
+    tapeColor: "rose",
   },
   {
     id: "mem-6",
@@ -77,5 +96,9 @@ export const memoriesData: MemoryPhotoItem[] = [
     category: "Wishes",
     aspectRatio: "landscape",
     note: "Replace photo6.svg with a special celebration photo",
+    handwrittenNote: "Here's to the brightest 20th year ahead ❤️",
+    sticker: "New Chapter ✨",
+    tapeColor: "gold",
+    featured: true,
   },
 ];

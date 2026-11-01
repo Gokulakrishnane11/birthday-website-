@@ -3,6 +3,7 @@
 @theme {
   --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
 
   /* Color Palette Tokens */
   --color-charcoal-950: #070509;
@@ -244,4 +245,8 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 114, 182, 0.4);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
 }
