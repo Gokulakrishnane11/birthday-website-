@@ -34,7 +34,7 @@ export const GallerySection: React.FC = () => {
       id="memories"
       title="Photo Keepsake Gallery"
       subtitle="VISUAL MEMORIES"
-      description="Polaroid frames capturing laughter, little details, and her 19th birthday celebration."
+      description="Polaroid frames capturing laughter, little details, and her 20th birthday celebration."
       containerWidth="wide"
       glow="gold"
     >

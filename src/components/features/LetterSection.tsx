@@ -67,7 +67,7 @@ export const LetterSection: React.FC = () => {
                   level={3}
                   className="text-xl sm:text-2xl font-serif text-[#fdfaf6] mb-3 leading-relaxed"
                 >
-                  {letterData.teaserText.replace(/19th/g, `${celebratedAge}th`)}
+                  {letterData.teaserText.replace(/19th|20th/gi, `${celebratedAge}th`)}
                 </Heading>
 
                 <Paragraph size="sm" className="text-[#cbbead] mb-8">
@@ -136,7 +136,7 @@ export const LetterSection: React.FC = () => {
 
                   {/* Intro Paragraphs */}
                   {letterData.introParagraphs.map((para, idx) => {
-                    const dynamicText = para.replace(/19th/gi, `${celebratedAge}th`);
+                    const dynamicText = para.replace(/19th|20th/gi, `${celebratedAge}th`);
                     return (
                       <motion.div key={`intro-${idx}`} variants={fadeUp}>
                         <Paragraph
@@ -267,12 +267,12 @@ export const LetterSection: React.FC = () => {
                     variants={fadeUp}
                     className="pt-8 border-t border-white/10 space-y-4"
                   >
-                    {/* "Happy 19th Birthday, Gundoos! 🐼❤️" */}
+                    {/* "Happy 20th Birthday, Gundoos! 🐼❤️" */}
                     <Heading
                       level={2}
                       className="text-2xl sm:text-4xl font-serif text-gradient-rose font-bold"
                     >
-                      {letterData.closingWishes.birthdayCelebrate.replace(/19th/gi, `${celebratedAge}th`)}
+                      {letterData.closingWishes.birthdayCelebrate.replace(/19th|20th/gi, `${celebratedAge}th`)}
                     </Heading>
 
                     {/* "Keep that smile. Keep that madness. Keep being YOU." */}

@@ -6,6 +6,7 @@ import {
   getCurrentAge,
   getNextBirthdayYear,
   getFormattedCurrentISTDate,
+  BIRTH_YEAR,
 } from '@/utils/birthday';
 import { Container } from '../common/Container';
 import { Heading, Subheading, Paragraph, GradientText } from '../common/Typography';
@@ -24,7 +25,7 @@ export interface NormalModeLandingProps {
 export const NormalModeLanding: React.FC<NormalModeLandingProps> = ({ injectedDate }) => {
   const currentAge = getCurrentAge(injectedDate);
   const targetYear = getNextBirthdayYear(injectedDate);
-  const turningAge = targetYear - 2007;
+  const turningAge = targetYear - BIRTH_YEAR;
   const currentISTDate = getFormattedCurrentISTDate(injectedDate);
   const nickname = siteConfig.nickname || 'Gundoos 🐼';
 

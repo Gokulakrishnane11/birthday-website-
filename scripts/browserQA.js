@@ -413,7 +413,7 @@ async function runQA() {
     // 6. Cinematic Intro on November 2
     await client.waitFor(`(document.querySelector('h1')?.innerText || '').length > 0`);
     const introHeading = await client.eval(`document.querySelector('h1')?.innerText`);
-    const introBadge = await client.eval(`document.body.innerText.includes('19TH BIRTHDAY')`);
+    const introBadge = await client.eval(`document.body.innerText.includes('20TH BIRTHDAY')`);
     const introMusic = await client.eval(`document.querySelector('aside[aria-label="Background music controls"]')?.innerText || ''`);
     const introHasCornfield = introMusic.includes('Cornfield Chase') && introMusic.toLowerCase().includes('cinematic intro');
 
@@ -438,7 +438,7 @@ async function runQA() {
     const heroMusic = await client.eval(`document.querySelector('aside[aria-label="Background music controls"]')?.innerText || ''`);
     const heroHasColdplay = heroMusic.includes('A Sky Full of Stars') && heroMusic.toLowerCase().includes('birthday hero');
 
-    if (bdayHeroHeadline.includes('Happiest 19th Birthday') && bdayHeroHeadline.includes('Deepa!') && heroHasColdplay) {
+    if (bdayHeroHeadline.includes('Happiest 20th Birthday') && bdayHeroHeadline.includes('Deepa!') && heroHasColdplay) {
       record('7. Birthday Mode Hero Reveal & Music', 'PASS', `Celebration hero mounted with "A Sky Full of Stars" (Birthday Hero)`);
     } else {
       record('7. Birthday Mode Hero Reveal & Music', 'FAIL', `Hero headline: "${bdayHeroHeadline}", heroMusic: "${heroMusic}"`);
@@ -527,7 +527,7 @@ async function runQA() {
     const hasHereEmphasis = letterContent.includes("I'm here, okay?");
     const hasPersonalMsg = letterContent.includes("annoy you with my usual nonsense") && letterContent.includes("here as your friend, without expectations or pressure");
     const hasClosingTagline = letterContent.includes("Keep that smile. Keep that madness. Keep being YOU.");
-    const hasBirthdayWish = letterContent.includes("Happy 19th Birthday, Gundoos! 🐼❤️");
+    const hasBirthdayWish = letterContent.includes("Happy 20th Birthday, Gundoos! 🐼❤️");
 
     const allLetterChecksPassed = hasSalutation && hasSender && hasHeadingPrompt && hasWorthEmphasis &&
       hasFutureEmphasis && hasStrengthEmphasis && hasHereEmphasis && hasPersonalMsg && hasClosingTagline && hasBirthdayWish;

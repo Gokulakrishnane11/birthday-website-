@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from 'framer-motion';
 import { RefreshCw, Sparkles } from 'lucide-react';
 import { Container } from '../common/Container';
 import { Button } from '../common/Button';
+import { getBirthdayCountdown } from '@/utils/birthday';
 
 export interface NavItem {
   id: string;
@@ -27,6 +28,8 @@ export interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
   const [activeSection, setActiveSection] = useState<string>('hero');
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const { currentAge, turningAge, isBirthdayToday } = getBirthdayCountdown();
+  const celebratedAge = isBirthdayToday ? currentAge : turningAge;
 
   // Framer Motion Scroll Progress Bar
   const { scrollYProgress } = useScroll();
@@ -99,14 +102,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
         <button
           onClick={() => scrollToSection('hero')}
           className="flex items-center gap-2.5 cursor-pointer group text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f472b6] rounded-full px-1"
-          aria-label={`Scroll to home - Deepa's 19th Birthday`}
+          aria-label={`Scroll to home - Deepa's ${celebratedAge}th Birthday`}
         >
           <div className="w-8 h-8 rounded-full bg-[#f472b6]/20 border border-[#f472b6]/40 flex items-center justify-center transition-transform group-hover:scale-105">
             <span className="text-sm">🐼</span>
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-sm sm:text-base tracking-wide text-[#fdfaf6] truncate leading-tight">
-              Deepa's 19th Keepsake
+              Deepa's {celebratedAge}th Keepsake
             </span>
             <span className="text-[10px] text-[#fbcfe8] font-sans font-normal hidden sm:inline">
               Nov 2, 2026 • Gundoos

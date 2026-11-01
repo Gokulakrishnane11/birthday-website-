@@ -33,13 +33,13 @@ export interface BirthdayLetterData {
 
 export const letterData: BirthdayLetterData = {
   subtitleHeading: "For the days when smiling feels a little difficult...",
-  teaserText: "A handwritten letter for your 19th birthday...",
+  teaserText: "A handwritten letter for your 20th birthday...",
   ctaText: "Open My Letter",
   title: "A Letter For You",
   salutation: "Hey Gundoos! 🐼❤️",
 
   introParagraphs: [
-    "First of all, Happy 19th Birthday, Deepa! Another year older, and somehow you haven't run out of energy or things to talk about. 😂",
+    "First of all, Happy 20th Birthday, Deepa! Another year older, and somehow you haven't run out of energy or things to talk about. 😂",
     "I was thinking about what to write to you today. Sure, I could just tease you about the gym aunty incident or bring up that trending song you insisted I sing until it became your weapon to tease me. But today, on your birthday, I wanted to say something a little more honest and from the heart.",
   ],
 
@@ -75,7 +75,7 @@ export const letterData: BirthdayLetterData = {
   ],
 
   closingWishes: {
-    birthdayCelebrate: "Happy 19th Birthday, Gundoos! 🐼❤️",
+    birthdayCelebrate: "Happy 20th Birthday, Gundoos! 🐼❤️",
     tagline1: "Keep that smile. Keep that madness. Keep being YOU.",
     tagline2: "Celebrate yourself today—because you've been so strong, even on the quiet days when no one noticed.",
   },
@@ -86,7 +86,7 @@ export const letterData: BirthdayLetterData = {
 
   // Backward compatibility representation for text search / plain text checks
   paragraphs: [
-    "First of all, Happy 19th Birthday, Deepa! Another year older, and somehow you haven't run out of energy or things to talk about. 😂",
+    "First of all, Happy 20th Birthday, Deepa! Another year older, and somehow you haven't run out of energy or things to talk about. 😂",
     "I know this past phase hasn't been easy on you. You've had to navigate moments that hurt quietly, situations with people you considered family where silence replaced conversations, and memories from your past that still leave an ache.",
     "Their leaving doesn't reduce your worth. Someone else's inability to appreciate your heart does not mean you lack value.",
     "Your past doesn't decide your future. Those chapters taught you resilience, but they don't dictate what kind of happiness and genuine friendships you will find ahead.",
@@ -95,7 +95,7 @@ export const letterData: BirthdayLetterData = {
     "You don't have to hide your pain or pretend everything is okay around me. I'm here as your friend, without expectations or pressure. You don't have to face every difficult day alone.",
     "I'm here, okay?",
     "You deserve genuine friendships, genuine happiness, peace, and relationships where you can simply be yourself.",
-    "Happy 19th Birthday, Gundoos! 🐼❤️",
+    "Happy 20th Birthday, Gundoos! 🐼❤️",
     "Keep that smile. Keep that madness. Keep being YOU.",
   ],
 };

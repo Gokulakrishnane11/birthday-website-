@@ -66,7 +66,7 @@ export const timelineItems: TimelineItem[] = [
     title: "Little Moments That Matter",
     subtitle: "Small conversations and memories became meaningful",
     description:
-      "Today, it's not the grand gestures that define us, but the small everyday moments — the teasing remarks, your uncanny emotional intuition, your cheerful laughter, and the comfort of knowing there's someone who genuinely listens. Stepping into your 19th year, I'm simply grateful our paths intertwined.",
+      "Today, it's not the grand gestures that define us, but the small everyday moments — the teasing remarks, your uncanny emotional intuition, your cheerful laughter, and the comfort of knowing there's someone who genuinely listens. Stepping into your 20th year, I'm simply grateful our paths intertwined.",
     tag: "Looking Ahead",
     badge: "Present & Beyond",
     iconName: "Heart",

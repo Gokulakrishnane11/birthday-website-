@@ -20,8 +20,8 @@ export interface MemoryPhotoItem {
 export const memoriesData: MemoryPhotoItem[] = [
   {
     id: "mem-1",
-    title: "19th Birthday Milestone",
-    caption: "A digital frame saved for Deepa's 19th birthday smile.",
+    title: "20th Birthday Milestone",
+    caption: "A digital frame saved for Deepa's 20th birthday smile.",
     date: "November 2, 2026",
     image: photo1,
     category: "Birthday Keepsake",
@@ -70,7 +70,7 @@ export const memoriesData: MemoryPhotoItem[] = [
   },
   {
     id: "mem-6",
-    title: "Stepping into 19",
+    title: "Stepping into 20",
     caption: "Wishing you a year full of happiness, peace, good health, and success in everything.",
     date: "New Chapter",
     image: photo6,

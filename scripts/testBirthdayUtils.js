@@ -13,7 +13,7 @@ console.log('========================================================');
 console.log('   RUNNING NORMAL MODE & BIRTHDAY SURPRISE MODE TESTS   ');
 console.log('========================================================\n');
 
-// Test Case 1: Nov 1, 2026 -> Normal Mode, Age 18, Countdown targeting Nov 2, 2026
+// Test Case 1: Nov 1, 2026 -> Normal Mode, Age 19, Countdown targeting Nov 2, 2026
 {
   const testDate = new Date('2026-11-01T12:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
@@ -31,15 +31,15 @@ console.log('========================================================\n');
   });
 
   assert.strictEqual(isBday, false, 'Nov 1, 2026 must be NORMAL MODE');
-  assert.strictEqual(age, 18, 'Nov 1, 2026 current age must be 18');
-  assert.strictEqual(cd.turningAge, 19, 'Stepping into 19');
+  assert.strictEqual(age, 19, 'Nov 1, 2026 current age must be 19');
+  assert.strictEqual(cd.turningAge, 20, 'Stepping into 20');
   assert.strictEqual(cd.days, 0, '0 full days left (< 24h)');
   assert.strictEqual(cd.hours, 12, '12 hours remaining');
   assert.ok(quote.text.length > 0, 'Daily quote is present');
   console.log('✓ Test 1 Passed: Nov 1, 2026 = Normal mode + countdown + daily funny quote');
 }
 
-// Test Case 2: Nov 2, 2026 -> Birthday Surprise Mode, Age 19
+// Test Case 2: Nov 2, 2026 -> Birthday Surprise Mode, Age 20
 {
   const testDate = new Date('2026-11-02T00:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
@@ -53,7 +53,7 @@ console.log('========================================================\n');
   });
 
   assert.strictEqual(isBday, true, 'Nov 2, 2026 must be BIRTHDAY SURPRISE MODE');
-  assert.strictEqual(age, 19, 'Nov 2, 2026 current age must be 19');
+  assert.strictEqual(age, 20, 'Nov 2, 2026 current age must be 20');
   assert.strictEqual(cd.isBirthdayToday, true);
   console.log('✓ Test 2 Passed: Nov 2, 2026 = Full birthday surprise experience');
 }
@@ -75,14 +75,14 @@ console.log('========================================================\n');
   });
 
   assert.strictEqual(isBday, false, 'Nov 3, 2026 must be NORMAL MODE');
-  assert.strictEqual(age, 19, 'Nov 3, 2026 current age is 19');
+  assert.strictEqual(age, 20, 'Nov 3, 2026 current age is 20');
   assert.strictEqual(nextYear, 2027, 'Target birthday rolled over to 2027');
-  assert.strictEqual(cd.turningAge, 20, 'Next turning age is 20');
+  assert.strictEqual(cd.turningAge, 21, 'Next turning age is 21');
   assert.strictEqual(cd.days, 364, '364 days remaining to Nov 2, 2027');
   console.log('✓ Test 3 Passed: Nov 3, 2026 = Normal mode + countdown to 2027');
 }
 
-// Test Case 4: Nov 1, 2027 -> Normal Mode, Age 19, Countdown to Nov 2, 2027
+// Test Case 4: Nov 1, 2027 -> Normal Mode, Age 20, Countdown to Nov 2, 2027
 {
   const testDate = new Date('2027-11-01T12:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
@@ -97,12 +97,12 @@ console.log('========================================================\n');
   });
 
   assert.strictEqual(isBday, false, 'Nov 1, 2027 must be NORMAL MODE');
-  assert.strictEqual(age, 19, 'Nov 1, 2027 age is 19');
-  assert.strictEqual(cd.turningAge, 20, 'Turning 20');
+  assert.strictEqual(age, 20, 'Nov 1, 2027 age is 20');
+  assert.strictEqual(cd.turningAge, 21, 'Turning 21');
   console.log('✓ Test 4 Passed: Nov 1, 2027 = Normal mode');
 }
 
-// Test Case 5: Nov 2, 2027 -> Birthday Surprise Mode, Age 20
+// Test Case 5: Nov 2, 2027 -> Birthday Surprise Mode, Age 21
 {
   const testDate = new Date('2027-11-02T16:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
@@ -116,12 +116,12 @@ console.log('========================================================\n');
   });
 
   assert.strictEqual(isBday, true, 'Nov 2, 2027 must be BIRTHDAY SURPRISE MODE');
-  assert.strictEqual(age, 20, 'Nov 2, 2027 age must be 20');
+  assert.strictEqual(age, 21, 'Nov 2, 2027 age must be 21');
   assert.strictEqual(cd.isBirthdayToday, true);
   console.log('✓ Test 5 Passed: Nov 2, 2027 = Full birthday surprise experience');
 }
 
-// Test Case 6: Feb 29, 2028 (Leap Year) -> Normal Mode, Age 20, Target 2028
+// Test Case 6: Feb 29, 2028 (Leap Year) -> Normal Mode, Age 21, Target 2028
 {
   const testDate = new Date('2028-02-29T12:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
@@ -129,21 +129,21 @@ console.log('========================================================\n');
   const cd = getBirthdayCountdown(testDate);
 
   assert.strictEqual(isBday, false, 'Leap Day is NORMAL MODE');
-  assert.strictEqual(age, 20, 'Age on Feb 29, 2028 is 20');
-  assert.strictEqual(cd.turningAge, 21, 'Turning 21 in 2028');
+  assert.strictEqual(age, 21, 'Age on Feb 29, 2028 is 21');
+  assert.strictEqual(cd.turningAge, 22, 'Turning 22 in 2028');
   assert.strictEqual(cd.targetYear, 2028);
   console.log('✓ Test 6 Passed: Feb 29, 2028 (Leap year) handled correctly');
 }
 
-// Test Case 7: Nov 2, 2028 -> Birthday Surprise Mode, Age 21
+// Test Case 7: Nov 2, 2028 -> Birthday Surprise Mode, Age 22
 {
   const testDate = new Date('2028-11-02T10:00:00+05:30');
   const isBday = isBirthdayToday(testDate);
   const age = getCurrentAge(testDate);
 
   assert.strictEqual(isBday, true, 'Nov 2, 2028 must be BIRTHDAY SURPRISE MODE');
-  assert.strictEqual(age, 21, 'Nov 2, 2028 age must be 21');
-  console.log('✓ Test 7 Passed: Nov 2, 2028 = Age 21 Birthday Surprise Mode');
+  assert.strictEqual(age, 22, 'Nov 2, 2028 age must be 22');
+  console.log('✓ Test 7 Passed: Nov 2, 2028 = Age 22 Birthday Surprise Mode');
 }
 
 // Test Case 8: Daily Quote Determinism & Refresh Consistency

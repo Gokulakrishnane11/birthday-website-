@@ -45,7 +45,7 @@ export interface SiteConfig {
   recipientName: string;
   nickname: string;
   senderName: string;
-  birthDate: string; // "2007-11-02"
+  birthDate: string; // "2006-11-02"
   celebrationDate: string; // "2026-11-02"
   milestoneAge: number;
   hero: {

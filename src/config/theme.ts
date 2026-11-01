@@ -1,6 +1,6 @@
 /**
  * Central Theme & Design Tokens Configuration
- * Dreamy, Editorial & Romantic Cinematic Palette for Deepa's 19th Birthday
+ * Dreamy, Editorial & Romantic Cinematic Palette for Deepa's 20th Birthday
  */
 
 export const theme = {

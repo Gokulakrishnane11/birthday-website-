@@ -1,8 +1,9 @@
 // Dynamic Birthday & Timezone Utilities for Deepa Dharshini
 // Timezone: Asia/Kolkata (IST = UTC+05:30)
-// Date of Birth: November 2, 2007 (2007-11-02)
+// Date of Birth: November 2, 2006 (2006-11-02)
 
-export const BIRTH_YEAR = 2007;
+export const BIRTHDAY_DATE = '2006-11-02';
+export const BIRTH_YEAR = 2006;
 export const BIRTH_MONTH = 11; // November
 export const BIRTH_DAY = 2;
 export const TIMEZONE = 'Asia/Kolkata';

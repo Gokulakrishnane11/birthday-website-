@@ -4,13 +4,13 @@ export const siteConfig: SiteConfig = {
   recipientName: "Deepa Dharshini",
   nickname: "Gundoos 🐼",
   senderName: "Gokul",
-  birthDate: "2007-11-02",
+  birthDate: "2006-11-02",
   celebrationDate: "2026-11-02",
-  milestoneAge: 19,
+  milestoneAge: 20,
 
   hero: {
-    label: "A SPECIAL KEEPSAKE FOR YOUR 19TH",
-    title: "Happiest 19th Birthday, Deepa! ❤️",
+    label: "A SPECIAL KEEPSAKE FOR YOUR 20TH",
+    title: "Happiest 20th Birthday, Deepa! ❤️",
     subtitle: "Today is all about celebrating the beautiful person you are.",
     description:
       "From community team coordination to late-night phone calls, endless banter, and non-stop teasing — here is a digital keepsake crafted with care, just for you.",
